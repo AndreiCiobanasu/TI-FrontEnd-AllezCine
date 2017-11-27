@@ -97,7 +97,6 @@ nav {
 
  /* ÇA APPARAIT QUAND ON CLIQUE SUR LOGIN */
 #login {
-	position: relative;
 	z-index: 2;
 	width: 100vw;
 	height: 100vh;
@@ -173,6 +172,17 @@ nav {
 
 
 
+
+
+
+/*////////////////////////////////////////////////////////////////////
+							MENU
+////////////////////////////////////////////////////////////////////*/
+section {
+	margin-top: 101px;
+
+	border: 2px blue solid;
+}
 
 
 
