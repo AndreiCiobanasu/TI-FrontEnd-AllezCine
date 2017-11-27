@@ -32,3 +32,21 @@ function hiddenLogin() {
 	formulaire.style.display = "none";
 }
 
+
+
+
+var voirFilms = document.getElementById("voirFilms");
+
+function voirFilms(){
+	voirFilms.style.display = "flex";
+}
+
+
+
+
+
+
+
+
+
+

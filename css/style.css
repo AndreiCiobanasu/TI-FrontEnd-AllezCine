@@ -1,4 +1,7 @@
-
+body {
+	margin: 0;
+	padding: 0;
+}
 
 
 /*////////////////////////////////////////////////////////////////////
@@ -17,11 +20,11 @@ nav {
 }
 
 .navContenu {
-	width: 1400px;
+	width: 1300px;
 	height: 100px;
+	margin-bottom: 0;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
@@ -38,12 +41,16 @@ nav {
 }
 
  .li {
- 	width: 290px;
+ 	width: 315px;
  }
 
  /* LOGO */
 .logoNavbar {
 	width: 140px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
 }
 
  /* BARE DE RECHERCHE */
@@ -178,10 +185,55 @@ nav {
 /*////////////////////////////////////////////////////////////////////
 							MENU
 ////////////////////////////////////////////////////////////////////*/
-section {
+.menu {
 	margin-top: 101px;
 
-	border: 2px blue solid;
+	border: 2px green solid;
+	background-color: orange;
+}
+
+.dropdown-menu {
+	width: 200px;
+	margin-left: 50px;
+}
+
+.dropdown-item {
+	margin-bottom: 4px;
+
+	background-color: orange;
+	color: white;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.dropdown-item:hover {
+	background-color: #ec6359;
+	color: white;
+}
+
+.sousMenu {
+	width: 1300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.menuChild {
+	border: 1px green solid;
+	display: flex;
+	justify-content: center;
+	background-color: orange;
+}
+
+.borderRight {
+	border-right: 1px white solid;
+}
+
+.home {
+	background-color: black;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: white;
 }
 
 

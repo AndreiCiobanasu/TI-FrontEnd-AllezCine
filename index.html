@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Cinema</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="librairies/font-awesome.min.css">
-	<link rel="stylesheet" href="librairies/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 </head>
 <body>
@@ -16,19 +16,21 @@
 <!-- //////////////////////////////////////////////////////////////////
 							NAVBAR
 /////////////////////////////////////////////////////////////////////-->
+	
+<div>
 	<nav>
 		<ul class="navContenu">
 			<!-- LOGO -->
 			<li class="li">
 				<a href="">
 					<img class="logoNavbar" src="img/logo.png
-" alt="logo">
+					" alt="logo">
 				</a>
 			</li>
 
 			<!-- BARE DE RECHERCHE -->
 			<li>
-				<form method="GET" action="">
+				<form method="GET">
 					<input type="search" name="" id="text" placeholder="Recherche">
 					<input type="submit" name="" id="recherche" value="Go">
 				</form>
@@ -45,13 +47,14 @@
 			</li>
 		</ul>
 	</nav>
+</div>
 
 	<!-- ÇA APPARAIT QUAND ON CLIQUE SUR LOGIN -->
 	<div id="login" type="button" onclick="hiddenLogin()">
 	</div>
-	<form id="formulaire" class="wow zoomIn" action="">
+	<form id="formulaire" class="wow zoomIn">
 		<p>
-			<a href="" class="x" type="button" onclick="hiddenLogin()">
+			<a class="x" type="button" onclick="hiddenLogin()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</a>
 		</p>
@@ -88,14 +91,48 @@
 <!-- //////////////////////////////////////////////////////////////////
 							MENU
 /////////////////////////////////////////////////////////////////////-->
-<section>
+<div class="container-fluid pl-0 pr-0 menu">
+	<div class="pl-0 pr-0 sousMenu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light px-0 py-0">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="col-12 pr-0 navbar-nav">
+					<li class="col-2 nav-item active menuChild home">
+						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+					</li>
 
-</section>
+					<li class="col-2 nav-item dropdown menuChild borderRight">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Films
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Fantastique</a>
+							<a class="dropdown-item" href="#">Comedie</a>
+						</div>
+					</li>
 
+					<li class="col-2 nav-item dropdown menuChild borderRight">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Series
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Fantastique</a>
+							<a class="dropdown-item" href="#">Comedie</a>
+						</div>
+					</li>
+					<li class="col-2 menuChild borderRight"></li>
+					<li class="col-2 menuChild borderRight"></li>
+					<li class="col-2 menuChild borderRight"></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-
-
-
+</div>
 
 
 
@@ -113,5 +150,12 @@
           </script>
 	<!-- link pour Pop-up cookies-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+	<!-- links pour Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
 </body>
 </html>
