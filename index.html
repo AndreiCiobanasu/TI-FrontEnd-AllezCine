@@ -5,15 +5,99 @@
 	<title>Cinema</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="librairies/font-awesome.min.css">
 	<link rel="stylesheet" href="librairies/bootstrap.min.css">
 </head>
 <body>
-	<i class="fa fa-arrow-circle-up fleche" aria-hidden="true"></i>
-	<div class="wow fadeInUp"></div>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////
+							NAVBAR
+/////////////////////////////////////////////////////////////////////-->
+	<nav>
+		<ul class="navContenu">
+			<!-- LOGO -->
+			<li class="li">
+				<a href="">
+					<img class="logoNavbar" src="img/logo.png
+" alt="logo">
+				</a>
+			</li>
+
+			<!-- BARE DE RECHERCHE -->
+			<li>
+				<form method="GET" action="">
+					<input type="search" name="" id="text" placeholder="Recherche">
+					<input type="submit" name="" id="recherche" value="Go">
+				</form>
+			</li>
+
+			<!-- TELEPHONE ET LOGIN -->
+			<li class="li">
+				<a class="linkTel" href="tel:+32475297506"> 
+					<i class="fa fa-phone tel" aria-hidden="true"></i>
+					(+000) 123 345 653
+				</a>
+
+				<button class="loginButton" type="button" onclick="seeLogin()">LOGIN</button>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- ÇA APPARAIT QUAND ON CLIQUE SUR LOGIN -->
+	<div id="login" type="button" onclick="hiddenLogin()">
+	</div>
+	<form id="formulaire" class="wow zoomIn" action="">
+		<p>
+			<a href="" class="x" type="button" onclick="hiddenLogin()">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</a>
+		</p>
+
+		<p class="comme"><img class="logoLogin" src="img/logo.png
+"></p>
+
+		<p class="accedez">Accédez à votre compte</p>
+
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username">
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password">
+
+		<div>
+			<p class="checkLogin">
+				<input type="checkbox"> <span>Rester connecté</span>
+			</p>
+			<button class="button" type="button">Me connecter</button>
+			<button class="button" type="button">Créer un compte</button>
+			<button class="button" type="button">Mot de passe oublié?</button>
+		</div>
+	</form>
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////
+							MENU
+/////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- link Jquery.js-->
 	<script type="text/javascript" src="librairies/jquery-3.2.1.min.js"></script>
+	<!-- link script.js.js-->
 	<script type="text/javascript" src="js/script.js"></script>
-	<!-- WOW.js-->
+	<!-- link WOW.js-->
 	<script src="librairies/wow.min.js"></script>
           <script>
           new WOW().init();
