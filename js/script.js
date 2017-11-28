@@ -42,8 +42,33 @@ function voirFilms(){
 }
 
 
+/*  ALERT AGE */
 
+var alert = document.getElementById("alert");
+var formAlert = document.getElementById("formAlert");
 
+function showAlert() {
+alert.style.display = "flex";
+formAlert.style.display = "flex";
+}
+replyinsert_emoticon
+more_vert
+function hiddenAlert() {
+alert.style.display = "none";
+formAlert.style.display = "none";
+}
+
+function redirect(){
+var age = document.getElementById("age").value;
+
+if (age>=18) {
+    hiddenAlert();
+}else if(age<18){
+    location.href = "https://pics.me.me/how-to-be-an-adult-hawour-bills-dont-smoke-meth-10345128.png";
+}else{
+    alert ("Rentrez votre âge");
+}
+}
 
 
 

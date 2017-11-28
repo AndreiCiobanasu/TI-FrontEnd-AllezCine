@@ -2,6 +2,84 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/*////////////////////////////////////////////////////////////////////
+ALERT AGE
+////////////////////////////////////////////////////////////////////*/
+#alert{
+position: relative;
+z-index: 4;
+width: 100vw;
+height: 200vh;
+display: none;
+
+background-color: black;
+opacity: 0.85;
+transition: 2s;}
+#formAlert {
+position: fixed;
+display: flex;
+flex-direction: column;
+z-index: 5;
+width: 500px;
+height: 300px;
+top: 100px;
+margin-left: 40vw;
+padding: 20px;
+display: none;
+text-align: center;
+
+border: 1px blue solid;
+border-radius: 10px;
+background-color: white;
+opacity: 1;
+transition: 3s;
+}
+.logoAlert {
+padding-top: 20px;
+width: 200px;
+margin-top: -50px;
+}
+
+.question {
+font-size: 20px;
+text-align: center;
+}
+
+#formAlert label {
+margin-top: 20px;
+font-size: 20px;
+}
+
+#formAlert input {
+height: 30px;
+}
+
+.input {
+height: 30px;
+margin-top: 20px;
+margin-right: 20px;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*////////////////////////////////////////////////////////////////////

@@ -9,7 +9,34 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 </head>
-<body>
+<body onload="showAlert()">
+
+
+<!-- //////////////////////////////////////////////////////////////////
+							ALERT AGE
+/////////////////////////////////////////////////////////////////////-->
+<div id="alert">
+</div>
+<div class="wrapAlert">
+<form id="formAlert" class="animated pulse" action="" onsubmit="javascript:redirect();return false;">
+<h2 class="comme"><img class="logoAlert"></h2>
+<p class="comme"><img class="logoAlert" src="img/logo.png
+"></p>
+<p class="question">Quel âge avez-vous ?</p>
+
+        <label for="username">Tapez votre âge :</label>
+        <input type="text" name="age" id="age">
+
+        <div>
+            <input class="input" type="button" value="Valider" onclick="redirect()">
+        </div>
+    </form>
+</div>
+
+
+
+
+
 
 
 
