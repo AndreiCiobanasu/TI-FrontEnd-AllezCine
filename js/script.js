@@ -51,8 +51,7 @@ function showAlert() {
 alert.style.display = "flex";
 formAlert.style.display = "flex";
 }
-replyinsert_emoticon
-more_vert
+
 function hiddenAlert() {
 alert.style.display = "none";
 formAlert.style.display = "none";
