@@ -13,7 +13,7 @@ $(document).ready(function() {
 		aler.style.display = "flex";
 		formAlert.style.display = "flex";
 	}
-	showAlert;
+	showAlert();
 
 	$('#formAlert').on('submit', function(e){
 		e.preventDefault();
