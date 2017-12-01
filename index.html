@@ -4,26 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Cinema</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="librairies/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-
-
-
-
-
-
-
-    <!-- Bootstrap Core CSS -->
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- jQuery Slidey 0.0.1 -->
     <link href="css/jquery.slidey.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--<script src="dist/jquery.slidey.min.js"></script>-->
-    <script src="js/jquery.slidey.min.js"></script>
+
+	
 </head>
-<body onload="showAlert()">
+<body>
 
 
 <!-- //////////////////////////////////////////////////////////////////
@@ -32,19 +23,19 @@
 <div id="alert">
 </div>
 <div class="wrapAlert">
-<form id="formAlert" class="animated pulse" action="" onsubmit="javascript:redirect();return false;">
-<h2 class="comme"><img class="logoAlert"></h2>
-<p class="comme"><img class="logoAlert" src="img/logo.png
-"></p>
-<p class="question">Quel âge avez-vous ?</p>
+	<form id="formAlert" class="animated pulse" action="">
+		<h2 class="comme"><img class="logoAlert"></h2>
+		<p class="comme"><img class="logoAlert" src="img/logo.png
+			"></p>
+		<p class="question">Quel âge avez-vous ?</p>
 
-        <label for="username">Tapez votre âge :</label>
-        <input type="text" name="age" id="age">
+		<label for="username">Tapez votre âge :</label>
+		<input type="text" name="age" id="age">
 
-        <div>
-            <input class="input" type="button" value="Valider" onclick="redirect()">
-        </div>
-    </form>
+		<div>
+				<input id="input" type="submit" value="Valider">
+			</div>
+	</form>
 </div>
 
 
@@ -114,7 +105,7 @@
 				(+000) 123 345 653
 			</a>
 
-			<button class="loginButton" type="button" onclick="seeLogin()">LOGIN</button>
+			<button id="loginButton" type="button">LOGIN</button>
 		</li>
 	</ul>
 </nav>
@@ -124,7 +115,7 @@
 	</div>
 	<form id="formulaire" class="wow zoomIn">
 		<p>
-			<a class="x" type="button" onclick="hiddenLogin()">
+			<a id="x" type="button" onclick="hiddenLogin()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</a>
 		</p>
@@ -178,9 +169,9 @@
 							Films
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Fantastique</a>
-							<a class="dropdown-item" href="#">Comedie</a>
+							<a id="menuFilmsAllBouton" class="dropdown-item" href="#featuredMovies">ALL</a>
+							<a id="menuFilmsActionBouton" class="dropdown-item" href="#featuredMovies">ACTION</a>
+							<a id="menuFilmsComedieBouton" class="dropdown-item" href="#featuredMovies">COMEDIE</a>
 						</div>
 					</li>
 
@@ -189,9 +180,9 @@
 							Series
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Fantastique</a>
-							<a class="dropdown-item" href="#">Comedie</a>
+							<a id="menuSeriesAllBouton" class="dropdown-item" href="#featuredSeries">ALL</a>
+							<a id="menuSeriesActionBouton" class="dropdown-item" href="#featuredSeries">ACTION</a>
+							<a id="menuSeriesComedieBouton" class="dropdown-item" href="#featuredSeries">COMEDIE</a>
 						</div>
 					</li>
 					<li class="col-2 menuChild borderRight"></li>
@@ -243,14 +234,92 @@ Kiera's first desire is to get "home." But until she figures out a way to do tha
         <!-- /.row -->
     </div>
     <!-- /.container -->
-    <script type="text/javascript">
-        $("#slidey").slidey({
-            interval: 10000,
-            listCount: 5,
-            showList: true
-        });
-    </script>
 
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////
+							FEATURED MOVIES
+/////////////////////////////////////////////////////////////////////-->
+<div id="featuredMovies"><p>FEATURED MOVIES</p></div>
+
+<div class="containerFeaturedMovies wow fadeIn">
+	<div class=containerBoutonsMovies>
+		<button type="button" class="boutonsMovies" id="allMoviesBouton">All</button>
+		<button type="button" class="boutonsMovies" id="actionMoviesBouton">Action</button>
+		<button type="button" class="boutonsMovies" id="comedieMoviesBouton">Comedie</button>
+	</div>
+
+	<div class="moviesContainer" id="allMoviesContainer">
+		
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Movie" id="plusDeFilms_All" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeFilms_All" type="click">MOINS DE FILMS</button>
+	</div>
+
+	<div class="moviesContainer" id="actionMoviesContainer">
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Movie" id="plusDeFilms_Action" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeFilms_Action" type="click">MOINS DE FILMS</button>
+	</div>
+
+	<div class="moviesContainer" id="comedieMoviesContainer">
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Movie" id="plusDeFilms_Comedie" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeFilms_Comedie" type="click">MOINS DE FILMS</button>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////
+							FEATURED SERIES TV
+/////////////////////////////////////////////////////////////////////-->
+<div id="featuredSeries"><p>FEATURED SERIES TV</p></div>
+
+<div class="containerFeaturedSeries wow fadeIn">
+	<div class=containerBoutonsSeries>
+		<button type="button" class="boutonsSeries" id="allSeriesBouton">All</button>
+		<button type="button" class="boutonsSeries" id="actionSeriesBouton">Action</button>
+		<button type="button" class="boutonsSeries" id="comedieSeriesBouton">Comedie</button>
+	</div>
+
+	<div class="seriesContainer" id="allSeriesContainer">
+		
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Series" id="plusDeSeries_All" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeSeries_All" type="click">MOINS DE FILMS</button>
+	</div>
+
+	<div class="seriesContainer" id="actionSeriesContainer">
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Series" id="plusDeSeries_Action" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeSeries_Action" type="click">MOINS DE FILMS</button>
+	</div>
+
+	<div class="seriesContainer" id="comedieSeriesContainer">
+	</div>
+	<div class="containerButtons">
+		<button class="plusDeFilms_Series" id="plusDeSeries_Comedie" type="click">PLUS DE FILMS</button>
+		<button id="moinsDeSeries_Comedie" type="click">MOINS DE FILMS</button>
+	</div>
+</div>
 
 
 
@@ -276,22 +345,23 @@ Kiera's first desire is to get "home." But until she figures out a way to do tha
 
 
 	<!-- link Jquery.js-->
-	<script type="text/javascript" src="librairies/jquery-3.2.1.min.js"></script>
-	<!-- link script.js-->
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery Slidey 0.0.1 -->
+    <script src="js/jquery.slidey.js"></script>
+
+
 	<!-- link WOW.js-->
 	<script src="librairies/wow.min.js"></script>
-          <script>
-          new WOW().init();
-          </script>
+	<script>
+	new WOW().init();
+	</script>
 	<!-- link pour Pop-up cookies-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 
 	<!-- links pour Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
-</html>
+	<!-- link script.js-->
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

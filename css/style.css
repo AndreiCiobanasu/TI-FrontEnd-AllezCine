@@ -54,7 +54,7 @@ font-size: 20px;
 height: 30px;
 }
 
-.input {
+#input {
 height: 30px;
 margin-top: 20px;
 margin-right: 20px;
@@ -320,7 +320,7 @@ nav {
 	margin-right: 10px;
 }
 
-.loginButton {
+#loginButton {
 	margin-left: 20px;
 	padding: 5px;
 	width: 100px;
@@ -363,7 +363,7 @@ nav {
 	transition: 3s;
 }
 
-.x {
+#x {
 	width: 50px;
 	border: none;
 	font-size: 25px;
@@ -427,6 +427,9 @@ nav {
 .dropdown-menu {
 	width: 200px;
 	margin-left: 50px;
+	border: none;
+
+	background-color: transparent;
 }
 
 .dropdown-item {
@@ -478,9 +481,137 @@ nav {
 
 
 
+/*////////////////////////////////////////////////////////////////////
+							FEATURED MOVIES
+////////////////////////////////////////////////////////////////////*/
+#featuredMovies, #featuredSeries {
+	max-width: 1600px;
+	min-width: 1300px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 120px;
+	display: flex;
 
+	border: 1px red solid;
+}
 
+#featuredMovies p, #featuredSeries p {
+	font-size: 30px;
+	margin-bottom: 0;
+	padding-left: 10px;
 
+	border: 1px blue solid;
+	border-left: 5px orange solid;
+}
+
+/*  Container Featured Movies */
+.containerFeaturedMovies, .containerFeaturedSeries {
+	width: 1300px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+
+	border: 2px red solid;
+}
+
+.containerBoutonsMovies, .containerBoutonsSeries {
+	display: flex;
+
+	border: 2px green solid;
+}
+
+#allMoviesBouton, #actionMoviesBouton, #comedieMoviesBouton,
+#allSeriesBouton, #actionSeriesBouton, #comedieSeriesBouton {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-left: 10px;
+	outline-style: none;
+	transition: 0.5s;
+}
+
+#allMoviesBouton:hover, #actionMoviesBouton:hover, 
+#comedieMoviesBouton:hover, 
+#allSeriesBouton:hover, #actionSeriesBouton:hover, 
+#comedieSeriesBouton:hover {
+	cursor: pointer;
+	background-color: #ec6359;
+	color: white;
+}
+
+#allMoviesContainer, #actionMoviesContainer, #comedieMoviesContainer,
+#allSeriesContainer, #actionSeriesContainer, #comedieSeriesContainer {
+	height: 720px;
+	margin-bottom: 10px;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	transition: 1s;
+
+	border: 2px blue solid;
+}
+
+.divFilms, .divSeries {
+	width: 200px;
+	height: 350px;
+	margin-bottom: 10px;
+	overflow: hidden;
+
+	border: 5px red solid;
+}
+
+.filmsContainer, .seriesContainer {
+	height: 280px;
+}
+
+.imgFilms, .imgSeries {
+	width: 100%;
+	height: 280px;
+}
+
+.titleFilm, .titleSeries {
+	margin-bottom: 0px;
+	text-align: center;
+
+	border: 1px blue solid;
+}
+
+.anneeFilm, .anneeSeries {
+	border: 1px blue solid;
+}
+
+.containerButtons {
+	text-align: center;
+
+	border: 2px red solid;
+}
+
+.containerButtons button {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition: 1s;
+	cursor: pointer;
+
+	border: 2px green solid;
+	color: white;
+	background-color: orange;
+}
+
+.containerButtons button:hover {
+	background-color: #ec6359;
+}
+
+#moinsDeFilms_All, #moinsDeFilms_Action, #moinsDeFilms_Comedie,
+#moinsDeSeries_All, #moinsDeSeries_Action, #moinsDeSeries_Comedie {
+	display: none;
+}
 
 
 
