@@ -2,6 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+h5 {
+	color: white;
+}
 /*////////////////////////////////////////////////////////////////////
 ALERT AGE
 ////////////////////////////////////////////////////////////////////*/
@@ -571,7 +575,7 @@ padding: 20px;
 /*////////////////////////////////////////////////////////////////////
 							FEATURED MOVIES
 ////////////////////////////////////////////////////////////////////*/
-#featuredMovies, #featuredSeries {
+#featuredMovies, #featuredSeries, #contactUs {
 	max-width: 1600px;
 	min-width: 1300px;
 	width: 90%;
@@ -583,7 +587,7 @@ padding: 20px;
 	border: 1px red solid;
 }
 
-#featuredMovies p, #featuredSeries p {
+#featuredMovies p, #featuredSeries p, #contactUs p {
 	font-size: 30px;
 	margin-bottom: 0;
 	padding-left: 10px;
@@ -709,7 +713,119 @@ padding: 20px;
 
 
 
+/*////////////////////////////////////////////////////////////////////
+							CONTACT US
+////////////////////////////////////////////////////////////////////*/
+.contactBlocks {
+	width: 1300px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
 
+	border: 3px blue solid;
+}
+
+.block {
+	width: 310px;
+	padding: 30px;
+
+	border: 2px red solid;
+	background-color: #343a40;
+}
+
+.block .i {
+	width: 50px;
+	height: 50px;
+	margin-top: -55px;	
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 2px green solid;
+	border-radius: 50%;
+	background-color: orange;
+	color: white;
+}
+
+.block ul {
+	padding-left: 0px;
+}
+
+.block li {
+	padding-left: 0px;
+	
+	border: 1px orange solid;
+	list-style-type: none;
+	line-height: 40px;
+	color: white;
+}
+
+.containerMedia {
+	margin-bottom: 10px;
+	display: flex;
+
+	border: 1px red solid;
+}
+
+.block .Media {
+	width: 40px;
+	height: 40px;
+}
+
+#containerMediaFacebook {
+	background-color: #4862f1;
+}
+
+#containerMediaTwitter {
+	background-color: #59c7f9;
+}
+
+#containerMediaGoogle {
+	background-color: #ff665b;
+}
+
+.block p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-left: 50px;
+}
+
+/*  FORMULAIRE CONTACT  */
+.formContact {
+	width: 1300px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border: 1px red solid;
+}
+
+.inputContact {
+	width: 625px;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+textarea {
+	width: 1280px;
+	overflow-y: hidden;
+}
+
+.sendMessage {
+	margin-top: 10px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	border-radius: 0px;
+	background-color: #333333;
+	color: white;
+}
 
 
 
